@@ -1,0 +1,10 @@
+# YOLOv5/YOLOv8 dataset configuration
+path: ./synth_dataset_split  # dataset root directory
+
+train: train # train images (relative to 'path')
+val: val  # val images (relative to 'path')
+test: test # test images (relative to 'path')
+
+# Classes
+nc: 1  # number of classes
+names: ['landmine']  # class names
