@@ -17,7 +17,7 @@ def overlay_png_on_images(base_folder, output_folder, baseimgx, baseimgy, scalem
 
     # Create overlay images
     overlay_path_array = [r"pfm-image01.png", r"pfm-image02.png", r"pfm-image03.png",
-                          r"pfm-image04.png", r"pfm-image05.png"]
+                          r"pfm-image04.png", r"pfm-image05.png", r"pfm-image06.png"]
     overlay_image_array = []
     for file_name in overlay_path_array:
         overlay_image = Image.open(file_name).convert("RGBA")
@@ -29,7 +29,7 @@ def overlay_png_on_images(base_folder, output_folder, baseimgx, baseimgy, scalem
             base_img = Image.open(base_img_path).convert("RGBA")
 
             print("Creating images based on " + filename)
-            for i in range(5):
+            for i in range(1):
                 new_img = base_img.copy()
 
                 # Pick a random overlay image
